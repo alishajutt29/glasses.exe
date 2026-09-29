@@ -1,0 +1,39 @@
+/* glasses.exe — shared styles (Tailwind handles layout; this file holds fonts + reusable components) */
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth}
+::selection{background:#E11D48;color:#fff}
+body{font-family:'DM Sans','Helvetica Neue',Arial,sans-serif}
+h1,h2,.dsp{font-family:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;letter-spacing:.01em}
+
+/* surfaces */
+.surf{background:#f5f5f5}
+.dark .surf{background:#121212}
+
+/* buttons */
+.btn,.btn2{display:inline-block;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.16em;padding:.9rem 1.75rem;text-align:center;cursor:pointer;transition:.2s}
+.btn{background:#000;color:#fff;border:1px solid transparent}
+.dark .btn{background:#fff;color:#000}
+.btn:hover,.dark .btn:hover{background:#E11D48;color:#fff}
+.btn2{border:1px solid rgba(0,0,0,.4)}
+.dark .btn2{border-color:rgba(255,255,255,.4)}
+.btn2:hover{background:#E11D48;border-color:#E11D48;color:#fff}
+.btn2.on-dark{border-color:rgba(255,255,255,.5);color:#fff}
+.btn2.on-dark:hover{background:#fff;color:#000;border-color:#fff}
+.btn-sm{padding:.7rem .5rem;font-size:.7rem}
+
+/* inputs + size chips */
+.inp{width:100%;background:transparent;border:2px solid #d4d4d4;padding:.75rem 1rem;outline:0}
+.dark .inp{border-color:#404040}
+.inp:focus{border-color:#E11D48}
+.chip{border:2px solid #a3a3a3;min-width:3rem;padding:.5rem .75rem;font-weight:900;transition:.2s}
+.dark .chip{border-color:#525252}
+.chip:hover{border-color:#E11D48}
+.chip.on{background:#000;color:#fff;border-color:transparent}
+.dark .chip.on{background:#fff;color:#000}
+
+/* nav links */
+.nl{text-transform:uppercase;letter-spacing:.2em;font-size:.75rem;font-weight:700;opacity:.8;transition:.2s}
+.nl:hover,.nl.active{opacity:1;color:#E11D48}
+
+/* toast */
+#toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%);background:#E11D48;color:#fff;padding:.75rem 1.25rem;font-weight:700;opacity:0;pointer-events:none;transition:.3s;z-index:60}
