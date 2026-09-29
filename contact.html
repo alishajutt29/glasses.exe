@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — glasses.exe</title>
+<script>try{JSON.parse(localStorage.getItem('gx_theme'))==='light'&&document.documentElement.classList.remove('dark')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col" data-page="contact">
+<div id="site-header"></div>
+<main class="flex-1">
+<section class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10">
+<div><h1 class="text-6xl font-black uppercase leading-[.9]">Contact us</h1><p class="mt-6 opacity-80">Questions about sizing, orders or returns? Send a message and we reply within one working day.</p>
+<ul class="mt-6 space-y-2"><li>support@glasses.exe</li><li>+92 300 0000000</li><li>Lahore, Pakistan</li><li>Mon–Sat, 11am–8pm</li></ul></div>
+<form onsubmit="event.preventDefault();this.reset();toast('Message sent. We will reply soon.')" class="space-y-4">
+<input class="inp" required placeholder="Your name"><input class="inp" type="email" required placeholder="Email address"><textarea class="inp" rows="5" required placeholder="Your message"></textarea><button class="btn w-full">Send message</button></form></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

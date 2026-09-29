@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bold Eyewear — glasses.exe</title>
+<script>try{JSON.parse(localStorage.getItem('gx_theme'))==='light'&&document.documentElement.classList.remove('dark')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col" data-page="home">
+<div id="site-header"></div>
+<main class="flex-1">
+<section class="relative min-h-[88vh] flex items-end overflow-hidden text-white bg-black">
+  <img src="images/hero.jpg" alt="Crimson-lined glasses resting on a black leather case" class="absolute inset-0 w-full h-full object-cover opacity-70">
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/10"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto w-full px-4 pb-14 sm:pb-20">
+    <div class="h-1 w-16 bg-rose-600 mb-6"></div>
+    <h1 class="text-6xl sm:text-[8rem] lg:text-[12rem] font-black uppercase leading-[.85]">Frames<br>with an edge</h1>
+    <p class="mt-6 max-w-md text-white/80 text-lg">Crimson-lined metal and rimless frames. Light, precise and built to be noticed.</p>
+    <div class="flex flex-wrap gap-3 mt-8"><a href="products.html" class="btn">Shop the drop</a><a href="about.html" class="btn2 on-dark">Our story</a></div>
+  </div>
+</section>
+<div class="border-y border-neutral-300 dark:border-neutral-800"><div class="max-w-7xl mx-auto px-4 py-4 grid sm:grid-cols-3 gap-2 text-center text-xs uppercase tracking-[.2em] font-bold opacity-80"><span>Free delivery over Rs 15,000</span><span>7-day returns</span><span>Limited drops, no restocks</span></div></div>
+<div id="app"></div>
+<section class="max-w-7xl mx-auto px-4 pt-24"><div class="grid md:grid-cols-2 items-stretch">
+  <img src="images/c2.jpg" alt="Rimless frames angled on a dark surface" loading="lazy" class="w-full h-full object-cover aspect-[4/3]">
+  <div class="surf p-8 sm:p-14 flex flex-col justify-center"><h2 class="text-5xl sm:text-7xl font-black uppercase leading-[.9]">Crimson on every temple</h2><p class="mt-6 max-w-md opacity-80 leading-relaxed">Every frame carries the same signature: a red inlay running along the temple, from hinge to tip. Quiet from across the room, impossible to miss up close.</p><a href="products.html" class="btn mt-8 self-start">Shop all frames</a></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
